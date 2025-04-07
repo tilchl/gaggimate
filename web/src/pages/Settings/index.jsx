@@ -3,7 +3,7 @@ import { useQuery } from 'preact-fetching';
 import { Spinner } from '../../components/Spinner.jsx';
 import { useState, useEffect, useCallback, useRef } from 'preact/hooks';
 import homekitImage from '../../assets/homekit.png';
-import Card from './Card.jsx';
+import Card from '../../components/Card.jsx';
 import { timezones } from '../../config/zones.js';
 
 export function Settings() {

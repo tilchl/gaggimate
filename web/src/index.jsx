@@ -13,6 +13,7 @@ import { Scales } from './pages/Scales/index.jsx';
 import ApiService, { ApiServiceContext } from './services/ApiService.js';
 import { Navigation } from './components/Navigation.jsx';
 import { ProfileList } from './pages/ProfileList/index.jsx';
+import { ProfileEdit } from './pages/ProfileEdit/index.jsx';
 
 const apiService = new ApiService();
 
@@ -31,11 +32,12 @@ export function App() {
             <main id="page-content" class="flex max-w-full flex-auto flex-col">
               <div class="container mx-auto p-4 lg:p-8 xl:max-w-7xl">
                 <div class="grid grid-cols-1 md:gap-20 lg:grid-cols-12">
-                  <Navigation />
+                  <Navigation extended />
                   <div class="lg:col-span-9">
                     <Router>
                       <Route path="/" component={Home} />
                       <Route path="/profiles" component={ProfileList} />
+                      <Route path="/profiles/:id" component={ProfileEdit} />
                       <Route path="/settings" component={Settings} />
                       <Route path="/ota" component={OTA} />
                       <Route path="/scales" component={Scales} />
