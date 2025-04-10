@@ -14,10 +14,7 @@ import ApiService, { ApiServiceContext } from './services/ApiService.js';
 import { Navigation } from './components/Navigation.jsx';
 import { ProfileList } from './pages/ProfileList/index.jsx';
 import { ProfileEdit } from './pages/ProfileEdit/index.jsx';
-<<<<<<< HEAD
-=======
 import { Autotune } from './pages/Autotune/index.jsx';
->>>>>>> master
 
 const apiService = new ApiService();
 
