@@ -47,7 +47,7 @@ struct ControllerConfig {
 };
 
 const ControllerConfig GM_STANDARD_REV_1X = {.name = "GaggiMate Standard Rev 1.x",
-                                             .autodetectValue = 0, // Voltage divider was missing in Rev 1.0 so it's 0
+                                             .autodetectValue = 3, // Voltage divider was missing in Rev 1.0 so it's 0
                                              .heaterPin = 14,
                                              .pumpPin = 9,
                                              .pumpOn = 1,
@@ -131,7 +131,7 @@ const ControllerConfig GM_PRO_REV_1x = {.name = "GaggiMate Pro Rev 1.x",
                                         }};
 
 const ControllerConfig GM_PRO_LEGO = {.name = "GaggiMate Pro Lego Build",
-                                      .autodetectValue = 3,
+                                      .autodetectValue = 0,
                                       .heaterPin = 14,
                                       .pumpPin = 9,
                                       .pumpSensePin = 21,
